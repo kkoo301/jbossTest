@@ -8,6 +8,8 @@ import java.util.Properties;
 
 public class JbossTest {
 
+    //https://github.com/wildfly/jboss-ejb-client
+
     public static void main(String[] args) throws Exception {
         Properties environment = new Properties();
 
