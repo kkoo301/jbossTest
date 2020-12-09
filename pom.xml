@@ -18,8 +18,8 @@
         <version.wildfly.maven.plugin>2.0.2.Final</version.wildfly.maven.plugin>
         <version.ejb.plugin>2.5</version.ejb.plugin>
 
-        <maven.compiler.target>14</maven.compiler.target>
-        <maven.compiler.source>14</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
         <junit.version>5.7.0</junit.version>
     </properties>
 
@@ -52,6 +52,18 @@
             <artifactId>jboss-annotations-api_1.2_spec</artifactId>
             <scope>provided</scope>
         </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.wildfly/wildfly-naming-client -->
+        <!--<dependency>
+            <groupId>org.wildfly</groupId>
+            <artifactId>wildfly-naming-client</artifactId>
+            <version>1.0.13.Final</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.jboss</groupId>
+            <artifactId>jboss-ejb-client</artifactId>
+            <version>4.0.2.Final</version>
+        </dependency>
 
 
         <!-- Import the EJB API, we use provided scope as the API is included in WildFly -->
